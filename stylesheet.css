@@ -1,0 +1,141 @@
+/* _____________PROFILE.HTML CSS____________ */
+/* --------- elements ----------*/
+body {
+  background-color: #2e3059;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "Poppins";
+  color: #FFFFFF;
+}
+
+/* --------- body ----------*/
+#container {
+  width: 100%;
+  margin: 0 !important;
+}
+
+/* .header-row{ 
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+} */
+
+.name-career {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.social-icons a {
+  float: right;
+}
+
+.name {
+  margin: 0;
+}
+
+.career {
+  margin: 0;
+}
+.header-container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  background-color: #1d2052;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-row {
+  width: auto;
+  max-width: 1080px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 30px;
+  padding-left: 0 !important;
+  margin: auto;
+}
+
+.nav-links {
+  padding-right: 0 !important;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+
+.nav-links a:hover {
+  background-color: #080839;
+  width: 250px;
+  letter-spacing: 4px;
+}
+
+.nav-links a{
+  text-decoration: unset;
+  color: white;
+  font-family: "Poppins";
+  letter-spacing: 2px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 900;
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  color: white;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #0712a0;
+  padding: 10px;
+  font-size: 18px;
+  margin: 0 15px 0 15px;
+  border-radius: 100px;
+  -webkit-box-shadow: -15px 12px 25px -5px rgba(109,110,117,1);
+  -moz-box-shadow: -15px 12px 25px -5px rgba(109,110,117,1);
+  box-shadow: -15px 12px 25px -5px rgba(109,110,117,1);
+  -webkit-transition: width 1s ease, .5s ease;
+  transition: width 1s ease, .5s ease;
+}
+
+footer {
+  height: 200px;
+  background-color: #044f7d;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/*-----------responsive media queries------------*/
+
+@media all and (max-width: 980px){
+  .button-row {
+    flex-direction: column;
+  }
+  .nav-links a{
+    margin-top: 30px;
+  }
+}
+
