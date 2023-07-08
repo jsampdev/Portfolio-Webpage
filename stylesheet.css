@@ -22,12 +22,11 @@ a {
   margin: 0 !important;
 }
 
-/* .header-row{ 
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-} */
+.logo {
+  width: 400px;
+  height: auto;
+}
+
 
 .name-career {
   margin: 0;
@@ -38,8 +37,25 @@ a {
   justify-content: center;
 }
 
-.social-icons a {
+.social-icons a{
   float: right;
+  margin-left: 50px;
+}
+
+.social-icons img {
+  border-radius: 100%;
+  transition: .25s ease;
+  border: solid 2px #AEB9BD;
+
+}
+
+.social-icons img:hover {
+  background-color: aqua;
+  border: solid 2px aqua;
+}
+
+.social-icons:first-child{
+  margin: 0 !important;
 }
 
 .name {
@@ -58,6 +74,42 @@ a {
   align-items: center;
   justify-content: center;
 }
+
+.header-row {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  width: 90%;
+}
+
+.header-column {
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+
+.specialize:hover {
+  -webkit-animation:spin 1s ease;
+  -moz-animation:spin 1s ease;
+  animation:spin 1s ease;
+}
+@-moz-keyframes spin { 
+  100% { -moz-transform: rotate(15deg); } 
+}
+@-webkit-keyframes spin { 
+  100% { -webkit-transform: rotate(-15deg); } 
+}
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotate(-15deg); 
+      transform:rotate(-15deg); 
+  } 
+}
+
 
 .button-row {
   width: auto;
@@ -87,8 +139,9 @@ a {
 
 .nav-links a:hover {
   background-color: #080839;
-  width: 250px;
-  letter-spacing: 4px;
+  width: 300px;
+  letter-spacing: 6px;
+  color: aqua;
 }
 
 .nav-links a{
@@ -111,16 +164,17 @@ a {
   font-size: 18px;
   margin: 0 15px 0 15px;
   border-radius: 100px;
-  -webkit-box-shadow: -15px 12px 25px -5px rgba(109,110,117,1);
-  -moz-box-shadow: -15px 12px 25px -5px rgba(109,110,117,1);
-  box-shadow: -15px 12px 25px -5px rgba(109,110,117,1);
+  -webkit-box-shadow: -15px 12px 25px -5px #6d6e75;
+  -moz-box-shadow: -15px 12px 25px -5px #6d6e75;
+  box-shadow: -15px 12px 25px -5px #6d6e75;
   -webkit-transition: width 1s ease, .5s ease;
+  -moz-transition: width 1s ease, .5s ease;
   transition: width 1s ease, .5s ease;
 }
 
 footer {
   height: 200px;
-  background-color: #044f7d;
+  background-color: #737c96;
   display: flex;
   align-items: center;
   align-content: center;
