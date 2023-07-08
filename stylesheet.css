@@ -11,7 +11,8 @@ h4,
 h5,
 h6,
 p,
-a {
+a,
+li{
   font-family: "Poppins";
   color: #FFFFFF;
 }
@@ -81,7 +82,7 @@ a {
   justify-content: center;
 }
 
-.header-row {
+.row {
   display: flex;
   align-items: center;
   align-content: center;
@@ -100,19 +101,14 @@ a {
 
 .specialize h1{
   color: #AEB9BD;
-  transition: .7s ease;
+  transition: .7s ease, transform .7s ease-in-out;;
 }
 
 .specialize h1:hover{
   color: aqua;
-}
-
-.specialize {
-  transition: transform .7s ease-in-out;
-}
-.specialize:hover {
   transform: rotate(-15deg);
 }
+
 
 .button-row {
   width: auto;
@@ -147,6 +143,10 @@ a {
   color: aqua;
 }
 
+.nav-links a:active {
+  background-color: #737C96;
+}
+
 .nav-links a{
   text-decoration: unset;
   color: white;
@@ -173,6 +173,48 @@ a {
   -webkit-transition: width 1s ease, .5s ease;
   -moz-transition: width 1s ease, .5s ease;
   transition: width 1s ease, .5s ease;
+}
+
+.two-column {
+  width: 50%;
+  padding: 10px;
+  margin: 20px;
+}
+
+.text-mod {
+  /* border: solid 5px aqua; */
+  border-radius: 100px;
+  background-color: #17172b;
+}
+
+.text-mod h3 {
+  display: flex;
+  color: #9da8e3;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: .5s ease;
+}
+.text-mod h3:hover {
+  font-size: 24px;
+  color: #FFFFFF;
+  letter-spacing: 6px;
+}
+
+.text-mod a {
+  color: aqua;
+  text-decoration: none;
+  transition: .5s ease;
+}
+
+.text-mod a:hover {
+  color: #0712A0;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.secondary-list li{
+  color: #9da8e3;
 }
 
 footer {
