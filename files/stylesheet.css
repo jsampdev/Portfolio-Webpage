@@ -88,6 +88,7 @@ li {
 .specialize h1 {
   color: #aeb9bd;
   transition: 0.7s ease, transform 0.7s ease-in-out;
+  text-align: center;
 }
 
 .specialize h1:hover {
@@ -202,8 +203,7 @@ li {
 }
 
 .mod input{
-  text-decoration: unset;
-  color: white;
+  color: #ffffff;
   font-family: "Poppins";
   letter-spacing: 2px;
   font-size: 16px;
@@ -218,14 +218,14 @@ li {
   background-color: #9da8e3;
   padding: 10px;
   font-size: 18px;
-  margin: 0 15px 0 15px;
+  margin: 0 15px 0 0;
   border-radius: 100px;
   -webkit-box-shadow: -15px 12px 25px -5px #6d6e75;
   -moz-box-shadow: -15px 12px 25px -5px #6d6e75;
   box-shadow: -15px 12px 25px -5px #6d6e75;
   -webkit-transition: width 1s ease, 1s ease;
   -moz-transition: width 1s ease, 1s ease;
-  transition: width 1s ease, 1s ease;
+  transition: .5s ease;
   border: none;
 }
 
@@ -255,6 +255,7 @@ li {
   border-radius: 100%;
   float: right;
   display: block;
+  padding: 10px;
 }
 
 .secondary-list li {
