@@ -11,6 +11,7 @@ h4,
 h5,
 h6,
 p,
+span,
 a,
 li {
   font-family: "Poppins";
@@ -85,15 +86,28 @@ li {
   margin: auto;
 }
 
-.specialize h1 {
+.specialize h2 {
   color: #aeb9bd;
   transition: 0.7s ease, transform 0.7s ease-in-out;
   text-align: center;
 }
 
-.specialize h1:hover {
+.specialize-footer h2 {
+  color: #aeb9bd;
+  transition: 0.7s ease, transform 0.7s ease-in-out;
+  text-align: center;
+}
+
+.specialize h2:hover {
   color: aqua;
-  transform: rotate(-15deg);
+  transform: rotate(-7.5deg);
+  letter-spacing: 4px;
+}
+
+.specialize-footer h2:hover {
+  transform: rotate(7.5deg);
+  color: #0079BC;
+  letter-spacing: 4px;
 }
 
 .button-row {
@@ -131,7 +145,7 @@ li {
 }
 
 .nav-links a:active {
-  background-color: #737c96;
+  background-color: #080839;
 }
 
 .nav-links a {
@@ -158,7 +172,7 @@ li {
   box-shadow: 15px 10px 15px -5px #6d6e75;
   -webkit-transition: width 1s ease, 1s ease;
   -moz-transition: width 1s ease, 1s ease;
-  transition: width 1s ease, 1s ease;
+  transition: width .75s ease, .75s ease;
 }
 
 /*------------------BODY OF PAGE---------------*/
@@ -277,12 +291,60 @@ li {
   border-radius: 100%;
   float: right;
   display: block;
-  margin: 10px;
+  margin: 20px;
   border: solid 10px #6d6e75;
   -webkit-box-shadow: 15px 10px 15px -5px #6d6e75;
   -moz-box-shadow: 15px 10px 15px -5px #6d6e75;
   box-shadow: 15px 10px 15px -5px #6d6e75;
 }
+
+.open-attachment {
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.open-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.open-text img{
+  border: none;
+  width: 36px;
+  height: 36px;
+  box-shadow: none;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 10px 8px;
+  background-color: #AEB9BD;
+  transition: .5s ease;
+  
+}
+
+.open-text span {
+  transition: .5s ease;
+  color: #00ffff;
+  letter-spacing: 2px;
+}
+
+.open-text:hover span{
+  color: #3a45da;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.open-text:hover img {
+  width: 48px;
+  height: 48px;
+  background-color: #00ffff;
+}
+
+
+
 
 .full-width-column {
   display: flex;
@@ -333,6 +395,11 @@ footer {
   }
   .nav-links a {
     margin-top: 30px;
+  }
+
+  .row-title {
+    width: 80%;
+    height: auto;
   }
 }
 
