@@ -36,6 +36,7 @@ li {
   align-items: center;
   align-content: center;
   justify-content: center;
+  padding-top: 10px;
 }
 
 .social-icons a {
@@ -232,11 +233,6 @@ li {
   transition: 0.5s ease;
 }
 
-.mod h3:hover {
-  font-size: 24px;
-  color: #ffffff;
-  letter-spacing: 6px;
-}
 
 .mod input{
   color: #ffffff;
@@ -281,7 +277,7 @@ li {
 
 .mod a:hover {
   color: #3a45da;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   font-weight: bold;
 }
 
@@ -296,6 +292,7 @@ li {
   -webkit-box-shadow: 15px 10px 15px -5px #6d6e75;
   -moz-box-shadow: 15px 10px 15px -5px #6d6e75;
   box-shadow: 15px 10px 15px -5px #6d6e75;
+  shape-outside: circle();
 }
 
 .open-attachment {
@@ -321,18 +318,18 @@ li {
   border-radius: 10px;
   padding: 10px 8px;
   background-color: #AEB9BD;
-  transition: .5s ease;
-  
+  transition: .5s ease;  
 }
 
 .open-text span {
   transition: .5s ease;
   color: #00ffff;
   letter-spacing: 2px;
+  padding-top: 8px;
 }
 
 .open-text:hover span{
-  color: #3a45da;
+  color: #FFFFFF;
   letter-spacing: 4px;
   font-weight: bold;
 }
@@ -342,9 +339,6 @@ li {
   height: 48px;
   background-color: #00ffff;
 }
-
-
-
 
 .full-width-column {
   display: flex;
